@@ -12,4 +12,13 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        Debug.Log("Collision with " + coll.gameObject.name);
+        if (coll.gameObject.name.Equals("Enemy"))
+        {
+            Destroy(coll.gameObject);
+        }
+    }
 }

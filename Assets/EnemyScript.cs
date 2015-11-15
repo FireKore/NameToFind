@@ -12,6 +12,6 @@ public class EnemyScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Translate(new Vector3(-this.transform.position.normalized.x, this.transform.position.normalized.y) * speed * Time.deltaTime);
+        this.transform.Translate(new Vector3(-this.transform.position.normalized.x, -this.transform.position.normalized.y) * speed * Time.deltaTime);
 	}
 }
